@@ -2,9 +2,9 @@
 <!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns:epub="http://www.idpf.org/2007/ops">
   <head>
-    
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
+
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,15 +27,15 @@
     <div class="document-stage-band" id="working-draft-band">
         <p class="document-stage">Working Draft</p>
     </div>
-    
+
     <div class="document-type-band" id="standard-band">
         <p class="document-type">Calconnect Standard</p>
     </div>
-      
-        
-    
+
+
+
       <div id='toggle'> <span>•</span> </div>
-    
+
       <header>
 <div class="WordSection1">
 
@@ -48,7 +48,7 @@
   </div>
 
 <div class="coverpage-logo">
-    
+
     <div class="coverpage-logo-gb-img">
       <img width='113' height='56' src='img/gb-standard-gm.gif' alt='GM'>
     </div>
@@ -81,11 +81,13 @@
         </div>
 </div>
 
-    
+
 <div class="coverpage-footer">
 
   <div class="coverpage-stage-block">
-    <span class="stage">IS Stage</span>
+    <!-- do not show at completed stage
+      <span class="stage">IS Stage</span>
+    -->
   </div>
 
   <div class="coverpage-dates">
@@ -96,7 +98,7 @@
   <div class="coverpage_footer">
     国家密码管理局
   </div>
-  
+
 </div>
 
 </div>
@@ -107,7 +109,7 @@
 <nav>
     <h1 id="content">目录</h1>
     <div id="toc"></div>
-  
+
 </nav>
 
 
@@ -167,13 +169,13 @@
       </div>
       <div id="terms"><h1 id="d083e843-f20f-4a01-b8b9-9e5e1b96f9cf">3.&#xA0; &#x672F;&#x8BED;&#x548C;&#x5B9A;&#x4E49;</h1><p>&#x4E0B;&#x5217;&#x672F;&#x8BED;&#x548C;&#x5B9A;&#x4E49;&#x9002;&#x7528;&#x4E8E;&#x672C;&#x6587;&#x4EF6;&#x3002;</p>
 <p id="_6dcc21ee-9e96-4607-a8ed-c216828b2888">&#x4E0B;&#x5217;&#x672F;&#x8BED;&#x548C;&#x5B9A;&#x4E49;&#x9002;&#x7528;&#x4E8E;&#x672C;&#x6587;&#x4EF6;&#x3002;</p><p class="TermNum" id="_string_language_zh_string_string_language_en_algorithm_identifier_string">3.1</p>
-  <p class="Terms">&#x7B97;&#x6CD5;&#x6807;&#x8BC6; algorithm identifier</p> 
+  <p class="Terms">&#x7B97;&#x6CD5;&#x6807;&#x8BC6; algorithm identifier</p>
   <p id="_631032ae-0ba9-4d5f-8b16-b90825d5c140">&#x7528;&#x4E8E;&#x6807;&#x660E;&#x7B97;&#x6CD5;&#x673A;&#x5236;&#x7684;&#x6570;&#x5B57;&#x5316;&#x4FE1;&#x606F;</p>
 <p class="TermNum" id="_string_language_zh_sm2_string_string_language_en_sm2_algorithm_string">3.2</p>
-  <p class="Terms">SM2&#x5BC6;&#x7801;&#x7B97;&#x6CD5; SM2 algorithm</p> 
+  <p class="Terms">SM2&#x5BC6;&#x7801;&#x7B97;&#x6CD5; SM2 algorithm</p>
   <p id="_98728d19-cb19-49f3-8230-cefab0ee81aa">&#x4E00;&#x79CD;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x5BC6;&#x7801;&#x7B97;&#x6CD5;&#xFF0C;&#x5BC6;&#x94A5;&#x957F;&#x5EA6;&#x4E3A;256&#x6BD4;&#x7279;&#x3002;</p>
 <p class="TermNum" id="_string_language_zh_sm3_string_string_language_en_sm3_algorithm_string">3.3</p>
-  <p class="Terms">SM3&#x7B97;&#x6CD5; SM3 algorithm</p> 
+  <p class="Terms">SM3&#x7B97;&#x6CD5; SM3 algorithm</p>
   <p id="_5c69984d-6f70-40c6-b411-08119eca9fc5">&#x4E00;&#x79CD;&#x6742;&#x51D1;&#x7B97;&#x6CD5;&#xFF0C;&#x8F93;&#x51FA;&#x957F;&#x5EA6;&#x4E3A;256&#x6BD4;&#x7279;&#x3002;</p>
 </div>
       <div id="introduction">
@@ -636,7 +638,7 @@ SM2-3&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x3002;</p
               'container': 'main', //element to find all selectors in
               'smoothScrolling': true, //enable or disable smooth scrolling on click
               'prefix': 'toc', //prefix for anchor tags and class names
-              'onHighlight': function(el) {}, //called when a new section is highlighted 
+              'onHighlight': function(el) {}, //called when a new section is highlighted
               'highlightOnScroll': true, //add class to heading that is currently in focus
               'highlightOffset': 100, //offset to trigger the next headline
               'anchorName': function(i, heading, prefix) { //custom function for anchor name
@@ -649,9 +651,9 @@ SM2-3&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x3002;</p
             return $heading[0].tagName.toLowerCase();
           }
           });
-          
+
       </script>
-    
+
     <script>
       //TOC toggle animation
     $('#toggle').on('click', function(){
@@ -668,11 +670,11 @@ SM2-3&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x3002;</p
         }
     });
     </script>
-    
+
     <script>
         // Scroll to top button
         window.onscroll = function() {scrollFunction()};
-        
+
         function scrollFunction() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 document.getElementById("myBtn").style.display = "block";
@@ -680,14 +682,14 @@ SM2-3&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x3002;</p
                 document.getElementById("myBtn").style.display = "none";
             }
         }
-        
+
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
         </script>
-    
+
       <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         asciimath2jax: {
@@ -695,7 +697,7 @@ SM2-3&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x3002;</p
         }
      });
     </script>
-    
+
     <script>
       $(document).ready(function() {
         $('[id^=toc]').each(function ()
