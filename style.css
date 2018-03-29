@@ -2,7 +2,7 @@
     0 CSS RESET
 */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -16,8 +16,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -28,7 +28,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -62,7 +62,7 @@ table {
       overflow: auto;
       padding: 0 0 0 45px;
       /*margin-right: 30px;*/
-      background-color:#f7f7f7; 
+      background-color:#f7f7f7;
   }
 
   #toggle {
@@ -78,10 +78,10 @@ table {
   #toggle span {
       text-align: center;
       width: 100%;
-      position: absolute;             
+      position: absolute;
       top: 50%;
       transform: translate(0, -50%);
-      
+
   }
 
 
@@ -172,8 +172,8 @@ span[id^="toc"]:after {
   padding-right: 6px;
   padding-top:4px;
   margin-left: -20px;
-  font-family: "Font Awesome 5 Free"; 
-  font-weight: 900; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   font-size: 0.8em;
   color: #cfcfcf;
   content: "\f0c1";
@@ -239,8 +239,10 @@ p.document-type, p.document-stage {
   font-size: 0.9em;
   font-weight: 400;
   letter-spacing: 0.05em;
-  margin:0;
-  margin-left: 6px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   writing-mode:tb-rl;
 -webkit-transform:rotate(180deg);
 -moz-transform:rotate(180deg);
@@ -248,6 +250,15 @@ p.document-type, p.document-stage {
 white-space:nowrap;
 display:block;
   bottom:0;
+}
+
+p.document-type.zh, p.document-stage.zh {
+  -webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  -o-transform: rotate(0deg);
+  margin-top: 10px;
+  letter-spacing: 0.1em;
+  font-size: 1em;
 }
 
 p.document-type {
@@ -340,12 +351,12 @@ p.document-stage {
 /*
     1 General Styles
 */
- 
+
   body {
     font-size: 1em;
     margin: 0;
      }
-  
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5em;
   margin-bottom: 0.3em;
@@ -355,13 +366,13 @@ h1, h2, h3, h4, h5, h6 {
 
   h1 {
     font-size: 1.5em;
-    font-weight: 400; 
+    font-weight: 400;
   }
-  
+
   h2 {
     font-size: 1.3em;
     font-weight: 300; }
-  
+
   h3 {
     font-size: 1.1em;
     font-weight: 300; }
@@ -381,91 +392,89 @@ p {
   background-color: #f1f1f1;
   margin: 1em 0 1em 0;
 }
-  
+
   .WordSection2, .WordSection3 {
     margin: 0 1.5em; }
-  
+
   .zzSTDTitle1, .MsoCommentText {
     display: none; }
-  
+
   a:visited {
     text-decoration: none; }
-  
-  
+
+
   p.TermNum {
-    font-weight: 600;
+/*    font-weight: 600;*/
+    font-size: 1.3em;
+    font-weight: 300;
+    font-family: "SimSei", sans-serif;
     margin: 1em 0 0 0; }
-  
+
   p.Terms {
-    font-weight: 600;
+/*    font-weight: 600;*/
+    font-size: 1.3em;
+    font-weight: 300;
+    font-family: "SimSei", sans-serif;
     margin: 0 0 1em 0; }
-  
+
   p.AltTerms {
     font-weight: 400;
     font-style: italic;
     margin: 0; }
-  
+
   p.DeprecatedTerms {
     font-weight: 400;
     font-style: italic;
     margin: 0; }
-  
+
   ul {
     padding-left: 1em; }
-  
+
   #toc-list ul {
     margin-bottom: 0.25em; }
-  
+
   #toc-list li {
     list-style-type: none; }
-  
+
 .coverpage {
   text-align: center;
-  padding: 3em; 
+  padding: 3em;
 }
 
 .coverpage-category {
   float: left;
   text-align: left;
-  font-size: 0.8em;
 }
 
-span.category-1 {
-  top:0;
-  display: block;
+.coverpage-category span {
+  font-size: 0.9em;
   font-family: "SimHei", sans-serif;
-}
-
-span.category-2 {
-  margin-left: 4em;
   display: block;
 }
-  
+
 .coverpage-logo {
-  text-align: right;
   display: block;
 }
 
 .coverpage-logo-gb-img {
+  text-align: right;
   right:0;
-  margin-right: 4em;
+  /*margin-right: 4em;*/
 }
 
 .coverpage-logo-gb-img img {
-  margin-top: 2em;
+  margin-bottom: 1em;
 }
-  
+
 span.coverpage-logo-text {
   font-size: 2.5em;
-  right:0;
   margin-top: 1em;
   color: #000000;
 }
 
 .coverpage-doc-identity-first {
-  right:0;
-  font-size: 0.9em;
-  margin-top: 2em;
+  font-size: 1em;
+  margin-top: 1em;
   color: #000000;
 }
 
@@ -501,6 +510,16 @@ span.coverpage-logo-text {
   margin-top:5em;
 }
 
+.coverpage-stage-block .stage {
+  display: block;
+  margin-top:1em;
+}
+
+.coverpage-stage-block .stage-warning{
+  display: block;
+  margin-top:1em;
+}
+
 .coverpage-dates {
   width:100%;
   margin-top:5em;
@@ -516,7 +535,20 @@ span.date-active {
 
 .coverpage_footer {
   text-align:center;
-  width:100%;
+  font-size: 1.3em;
+  font-weight: 600;
+  width: 100%;
+}
+.coverpage_footer table, .coverpage_footer th, .coverpage_footer td {
+  border: 0;
+}
+.coverpage_footer th, .coverpage_footer td {
+  padding: 5px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.coverpage_footer .publish {
+  vertical-align: middle;
 }
 
   .coverpage-tc-name {
@@ -524,50 +556,48 @@ span.date-active {
     font-size: 1.2em;
     line-height: 1.2em;
     margin: 0.25em 0; }
-  
 
-  
   .coverpage-title {
     font-weight: 400; }
-  
+
   .coverpage-title .title-second {
     display: none; }
-  
+
   .coverpage-stage-block {
-    font-style: italic;
+    /*font-style: italic;*/
     font-size: 1.25em;
-    font-weight: 600; }
-  
+    /*font-weight: 400;*/ }
+
   .coverpage-warning {
     border-top: solid 1px #f36f36;
     border-bottom: solid 1px #f36f36;
     margin: 1em 2em;
     color: #485094;
     padding: 1em; }
-  
+
   .coverpage-warning .title {
     color: #f36f36;
     font-weight: 500; }
-  
+
   .coverpage-warning .content {
     font-style: italic; }
-  
+
   .copyright {
     padding: 1em; }
-  
+
   .copyright .name {
     color: #485094;
     font-weight: 600; }
-  
+
   .copyright .address {
     color: #485094; }
-  
+
   div.rule {
     width: 100%;
     height: 1px;
     background-color: #485094;
     margin: 2em 0; }
-  
+
   p.MsoCommentText, li.MsoCommentText, div.MsoCommentText {
     margin-top: 0cm;
     margin-right: 0cm;
@@ -578,7 +608,7 @@ span.date-active {
     tab-stops: 20.15pt;
     font-size: 12.0pt;
     font-family: "SimSun", serif; }
-  
+
   p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject {
     margin-top: 0cm;
     margin-right: 0cm;
@@ -756,7 +786,7 @@ a.footnote-number {
 }
 
 
- 
+
 /* Printing styling
 
   p.Sourcecode, li.Sourcecode, div.Sourcecode, pre.Sourcecode {
@@ -769,7 +799,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 9.0pt;
     font-family: "Courier New", monospace; }
-  
+
   p.Biblio, li.Biblio, div.Biblio {
     margin-top: 0cm;
     margin-right: 0cm;
@@ -780,7 +810,7 @@ a.footnote-number {
     line-height: 12.0pt;
     font-size: 11.0pt;
     font-family: "SimSun", serif; }
-  
+
   p.FigureTitle {
     margin-top: 0cm;
     margin-right: 0cm;
@@ -792,7 +822,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 11.0pt;
     font-family: "SimSun", serif; }
-  
+
   p.TableTitle {
     margin-top: 0cm;
     margin-right: 0cm;
@@ -804,7 +834,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 11.0pt;
     font-family: "SimSun", serif; }
-  
+
   p.Note, div.Note, li.Note {
     margin-top: 0in;
     margin-right: 0in;
@@ -817,7 +847,7 @@ a.footnote-number {
     font-size: 9.0pt;
     text-autospace: none;
     font-family: "SimSun", serif; }
-  
+
   p.ANNEX, li.ANNEX, div.ANNEX {
     margin-top: 0cm;
     margin-right: 0cm;
@@ -832,7 +862,7 @@ a.footnote-number {
     font-size: 14.0pt;
     font-family: "SimHei", sans-serif;
     font-weight: bold; }
-  
+
   p.BiblioTitle, li.BiblioTitle, div.BiblioTitle {
     margin-top: 0cm;
     margin-right: 0cm;
@@ -844,7 +874,7 @@ a.footnote-number {
     font-size: 14.0pt;
     font-family: "SimHei", sans-serif;
     font-weight: bold; }
-  
+
   p.Definition, li.Definition, div.Definition {
     margin-top: 0cm;
     margin-right: 0cm;
@@ -855,7 +885,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 11.0pt;
     font-family: "SimSun", serif; }
-  
+
   p.ForewordTitle, li.ForewordTitle, div.ForewordTitle, h1.ForewordTitle {
     margin-top: 32.0pt;
     margin-right: 0cm;
@@ -868,7 +898,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 16.0pt;
     font-family: "SimHei", sans-serif; }
-  
+
   p.IntroTitle, li.IntroTitle, div.IntroTitle, h1.IntroTitle {
     margin-top: 32.0pt;
     margin-right: 0cm;
@@ -881,7 +911,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 16.0pt;
     font-family: "SimHei", sans-serif; }
-  
+
   p.zzContents, li.zzContents, div.zzContents {
     margin-top: 48.0pt;
     margin-right: 0cm;
@@ -894,7 +924,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 16.0pt;
     font-family: "SimHei", sans-serif; }
-  
+
   p.zzCopyright, li.zzCopyright {
     margin-top: 0cm;
     margin-right: 14.2pt;
@@ -906,13 +936,13 @@ a.footnote-number {
     padding: 0cm;
     font-size: 11.0pt;
     font-family: "SimSun", serif; }
-  
+
   div.zzCopyright {
     border: solid windowtext 1.0pt;
     padding: 1.0pt 4.0pt 0cm 4.0pt;
     margin-left: 5.1pt;
     margin-right: 5.1pt; }
-  
+
   p.zzCopyright_address {
     margin-top: 0cm;
     margin-right: 14.2pt;
@@ -922,7 +952,7 @@ a.footnote-number {
     padding-left: 20pt;
     font-size: 10.0pt;
     text-align: left; }
-  
+
   p.zzSTDTitle, li.zzSTDTitle, div.zzSTDTitle {
     margin-top: 20.0pt;
     margin-right: 0cm;
@@ -933,7 +963,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 16.0pt;
     font-family: "SimHei", sans-serif; }
-  
+
   p.zzSTDTitle1, li.zzSTDTitle1, div.zzSTDTitle1 {
     margin-top: 0pt;
     margin-right: 0cm;
@@ -944,7 +974,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 16.0pt;
     font-family: "SimHei", sans-serif; }
-  
+
   p.Quote, li.Quote, div.Quote {
     margin-top: 0cm;
     margin-right: 36.0pt;
@@ -955,10 +985,10 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 11.0pt;
     font-family: "SimSun", serif; }
-  
+
   p.QuoteAttribution {
     text-align: right; }
-  
+
   p.Admonition, li.Admonition, div.Admonition {
     margin-top: 0cm;
     margin-right: 57.6pt;
@@ -971,7 +1001,7 @@ a.footnote-number {
     font-family: "SimSun", serif;
     color: #4472C4;
     font-style: italic; }
-  
+
   p.Code, li.Code, div.Code {
     margin: 0cm;
     margin-bottom: .0001pt;
@@ -979,7 +1009,7 @@ a.footnote-number {
     tab-stops: 20.15pt;
     font-size: 9.0pt;
     font-family: "Courier New", monospace; }
-  
+
   p.Formula, li.Formula, div.Formula {
     margin-top: 0cm;
     margin-right: 0cm;
@@ -989,7 +1019,7 @@ a.footnote-number {
     tab-stops: right 487.45pt;
     font-size: 11.0pt;
     font-family: "SimSun", serif; }
-  
+
   .h2Annex {
     margin-top: 7.8pt;
     margin-right: 0cm;
@@ -1001,116 +1031,116 @@ a.footnote-number {
     tab-stops: 27.0pt 35.0pt;
     font-size: 10.5pt;
     font-family: "SimHei", sans-serif; }
-  
+
   @page WordSection1 {
     size: 595.3pt 841.9pt;
     margin: 39.7pt 53.85pt 1.0cm 53.85pt; }
   div.WordSection1 {
     page: WordSection1; }
-  
+
   @page WordSection2 {
     size: 595.3pt 841.9pt;
     margin: 1.0in 1.25in 1.0in 1.25in; }
   div.WordSection2 {
     page: WordSection2; }
-  
+
   @page WordSection3 {
     size: 595.3pt 841.9pt;
     margin: 1.0in 1.25in 1.0in 1.25in; }
   div.WordSection3 {
     page: WordSection3; }
-  
+
   ol {
     margin-bottom: 0cm; }
-  
+
   ul {
     margin-bottom: 0cm; }
-  
+
   table.MsoISOTable {
     border-collapse: collapse;
     border: solid windowtext 2pt;
     font-size: 10.0pt;
     font-family: "SimSun", serif; }
-  
+
   table.MsoISOTable tr {
     page-break-inside: avoid; }
-  
+
   table.MsoISOTable th {
     border: solid windowtext 1pt;
     padding: 0cm 2.85pt 0cm 2.85pt; }
-  
+
   table.MsoISOTable td {
     border: solid windowtext 1pt;
     padding: 0cm 2.85pt 0cm 2.85pt; }
-  
+
   table.MsoTableGrid {
     border: solid windowtext 1.0pt;
     font-size: 10.0pt;
     font-family: "SimSun", serif; }
-  
+
   td {
     page-break-inside: avoid; }
-  
+
   tr {
     page-break-after: avoid; }
-  
+
   span.stem {
     font-family: "Cambria Math",serif;
     font-style: italic; }
-  
+
   div.formula {
     tab-stops: right 487.45pt; }
-  
+
   body {
     tab-interval: 21.0pt;
     text-justify-trim: punctuation; }
-  
+
   dt {
     page-break-inside: avoid;
     page-break-after: avoid; }
-  
+
   .coverpage_docnumber {
     text-align: center;
     font-size: 14.0pt;
     font-weight: bold; }
-  
+
   .coverpage_techcommittee {
     text-align: center; }
-  
+
   .coverpage_docstage {
     text-align: center;
     font-size: 30.0pt;
     color: #485094; }
-  
+
   div.coverpage_warning {
     border: solid windowtext 1.0pt #485094;
     padding: 1.0pt 4.0pt 1.0pt 4.0pt #485094;
     margin-left: 4.25pt;
     margin-right: 4.25pt; }
-  
+
   .coverpage_warning {
     color: #485094;
     font-size: 10.0pt; }
-  
+
   .coverpage_footer {
     text-align: center;
     font-family: "SimHei", sans-serif; }
-  
+
   .coverpage_footer table {
     text-align: left;
     margin-left: auto;
     margin-right: auto; }
-  
+
   a.TableFootnoteRef {
     vertical-align: super; }
-  
+
   aside {
     font-size: 10.0pt; }
-  
+
   .Hant {
     font-family: PMingLiU; }
-  
- 
+
+
   p.example, li.example, div.example {
 
     margin: 0in;
@@ -1120,7 +1150,7 @@ a.footnote-number {
     text-indent: 18.15pt;
     font-size: 9.0pt;
     font-family: "SimSun", serif; }
-  
+
   p.leftpagenumber, li.leftpagenumber, div.leftpagenumber {
     margin-top: 6.0pt;
     margin-right: 0cm;
@@ -1129,7 +1159,7 @@ a.footnote-number {
     margin-bottom: .0001pt;
     font-size: 9.0pt;
     font-family: "SimSun", serif; }
-  
+
   p.rightpagenumber, li.rightpagenumber, div.rightpagenumber {
     margin-top: 6.0pt;
     margin-right: 0cm;
@@ -1139,7 +1169,7 @@ a.footnote-number {
     text-align: right;
     font-size: 9.0pt;
     font-family: "SimSun", serif; }
-  
+
   p.supersedes, li.supersedes, div.supersedes {
 
     margin-top: 2.85pt;
@@ -1151,7 +1181,7 @@ a.footnote-number {
     line-height: 14.0pt;
     font-size: 10.5pt;
     font-family: "SimSun", serif; }
-  
+
   table.dl {
     margin-top: 0cm;
     margin-right: 0cm;
