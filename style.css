@@ -137,7 +137,7 @@ a {
   font-family: "SimSei", sans-serif;
 }
 
-#toc {
+nav a {
   text-decoration: none!important;
 }
 
@@ -239,8 +239,10 @@ p.document-type, p.document-stage {
   font-size: 0.9em;
   font-weight: 400;
   letter-spacing: 0.05em;
-  margin:0;
-  margin-left: 6px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   writing-mode:tb-rl;
 -webkit-transform:rotate(180deg);
 -moz-transform:rotate(180deg);
@@ -248,6 +250,15 @@ p.document-type, p.document-stage {
 white-space:nowrap;
 display:block;
   bottom:0;
+}
+
+p.document-type.zh, p.document-stage.zh {
+  -webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  -o-transform: rotate(0deg);
+  margin-top: 10px;
+  letter-spacing: 0.1em;
+  font-size: 1em;
 }
 
 p.document-type {
@@ -427,52 +438,50 @@ p {
 
 .coverpage {
   text-align: center;
-  padding: 3em;
+  padding: 1em 1em 1em 3em;
 }
 
 .coverpage-category {
   float: left;
   text-align: left;
-  font-size: 0.8em;
 }
 
-span.category-1 {
-  top:0;
-  display: block;
+.coverpage-category span {
+  font-size: 0.9em;
   font-family: "SimHei", sans-serif;
-}
-
-span.category-2 {
-  /*margin-left: 4em;*/
   display: block;
+  color: #292667;
 }
 
 .coverpage-logo {
-  text-align: right;
   display: block;
 }
 
+.coverpage-logo-header {
+	  padding: 1em;
+	  margin: 0;
+}
+
 .coverpage-logo-gb-img {
+  text-align: right;
   right:0;
   /*margin-right: 4em;*/
 }
 
 .coverpage-logo-gb-img img {
-  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 span.coverpage-logo-text {
   font-size: 2.5em;
-  right:0;
   margin-top: 1em;
-  color: #000000;
+  color: #292667;
 }
 
 .coverpage-doc-identity-first {
-  right:0;
-  font-size: 0.9em;
-  margin-top: 2em;
-  color: #000000;
+  font-size: 1em;
+  margin-top: 1em;
+  color: #292667;
 }
 
 .title-first, .title-second, .title-third, .docnumber,
@@ -482,7 +491,7 @@ span.coverpage-logo-text {
 }
 
 .coverpage-doc-identity-second {
-  margin-top: 15vh;
+  margin-top: 3em;
 }
 
 .coverpage-title-zh {
@@ -493,18 +502,45 @@ span.coverpage-logo-text {
   margin-top: 2em;
 }
 
+.coverpage-header, .coverpage-footer {
+	border: 2px solid #292667;
+	padding: 1em;
+}
+
 .coverpage-footer {
+	padding-bottom: 3em;
+}
+
+.coverpage-banner {
   margin-left:auto;
   margin-right:auto;
   width:auto;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
+  	  background-color: #292667;
+	  color: white;
+	  padding: 2em;
 }
 
 .coverpage-stage-block {
   width:100%;
-  margin-top:5em;
+  margin-top:2em;
+}
+
+.coverpage-stage-block .stage {
+  display: block;
+  margin-top:1em;
+}
+
+.coverpage-stage-block .stage-warning{
+  display: block;
+  margin-top:1em;
+}
+
+.stage-warning {
+	font-size: 0.8em;
+	font-style: italic;
 }
 
 .coverpage-dates {
@@ -514,16 +550,31 @@ span.coverpage-logo-text {
 
 span.date-publish {
   float:left;
+  padding-left: 1em;
 }
 
 span.date-active {
   float:right;
+  padding-right: 1em;
 }
 
 .coverpage_footer {
   text-align:center;
-
-  width:100%;
+  font-size: 1em;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 2em;
+}
+.coverpage_footer table, .coverpage_footer th, .coverpage_footer td {
+  border: 0;
+}
+.coverpage_footer th, .coverpage_footer td {
+  padding: 5px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.coverpage_footer .publish {
+  vertical-align: middle;
 }
 
   .coverpage-tc-name {
@@ -532,8 +583,6 @@ span.date-active {
     line-height: 1.2em;
     margin: 0.25em 0; }
 
-
-
   .coverpage-title {
     font-weight: 400; }
 
@@ -541,9 +590,10 @@ span.date-active {
     display: none; }
 
   .coverpage-stage-block {
-    font-style: italic;
+    /*font-style: italic;*/
     font-size: 1.25em;
-    font-weight: 600; }
+	text-align: center;
+    /*font-weight: 400;*/ }
 
   .coverpage-warning {
     border-top: solid 1px #f36f36;
