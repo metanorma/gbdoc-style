@@ -137,7 +137,7 @@ a {
   font-family: "SimSei", sans-serif;
 }
 
-#toc {
+nav a {
   text-decoration: none!important;
 }
 
@@ -438,7 +438,7 @@ p {
 
 .coverpage {
   text-align: center;
-  padding: 3em;
+  padding: 1em 1em 1em 3em;
 }
 
 .coverpage-category {
@@ -450,10 +450,16 @@ p {
   font-size: 0.9em;
   font-family: "SimHei", sans-serif;
   display: block;
+  color: #292667;
 }
 
 .coverpage-logo {
   display: block;
+}
+
+.coverpage-logo-header {
+	  padding: 1em;
+	  margin: 0;
 }
 
 .coverpage-logo-gb-img {
@@ -469,13 +475,13 @@ p {
 span.coverpage-logo-text {
   font-size: 2.5em;
   margin-top: 1em;
-  color: #000000;
+  color: #292667;
 }
 
 .coverpage-doc-identity-first {
   font-size: 1em;
   margin-top: 1em;
-  color: #000000;
+  color: #292667;
 }
 
 .title-first, .title-second, .title-third, .docnumber,
@@ -485,7 +491,7 @@ span.coverpage-logo-text {
 }
 
 .coverpage-doc-identity-second {
-  margin-top: 15vh;
+  margin-top: 3em;
 }
 
 .coverpage-title-zh {
@@ -496,18 +502,30 @@ span.coverpage-logo-text {
   margin-top: 2em;
 }
 
+.coverpage-header, .coverpage-footer {
+	border: 2px solid #292667;
+	padding: 1em;
+}
+
 .coverpage-footer {
+	padding-bottom: 3em;
+}
+
+.coverpage-banner {
   margin-left:auto;
   margin-right:auto;
   width:auto;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
+  	  background-color: #292667;
+	  color: white;
+	  padding: 2em;
 }
 
 .coverpage-stage-block {
   width:100%;
-  margin-top:5em;
+  margin-top:2em;
 }
 
 .coverpage-stage-block .stage {
@@ -520,6 +538,11 @@ span.coverpage-logo-text {
   margin-top:1em;
 }
 
+.stage-warning {
+	font-size: 0.8em;
+	font-style: italic;
+}
+
 .coverpage-dates {
   width:100%;
   margin-top:5em;
@@ -527,17 +550,20 @@ span.coverpage-logo-text {
 
 span.date-publish {
   float:left;
+  padding-left: 1em;
 }
 
 span.date-active {
   float:right;
+  padding-right: 1em;
 }
 
 .coverpage_footer {
   text-align:center;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 600;
   width: 100%;
+  margin-top: 2em;
 }
 .coverpage_footer table, .coverpage_footer th, .coverpage_footer td {
   border: 0;
@@ -566,6 +592,7 @@ span.date-active {
   .coverpage-stage-block {
     /*font-style: italic;*/
     font-size: 1.25em;
+	text-align: center;
     /*font-weight: 400;*/ }
 
   .coverpage-warning {
